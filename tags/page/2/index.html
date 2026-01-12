@@ -1,18 +1,95 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Example description">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="独立于此时的一个梦">
 <title>Tags</title>
 
 <link rel='canonical' href='https://3pm4am.github.io/tags/'>
 
-<link rel="stylesheet" href="/scss/style.min.833d6eed45de56f48306bf57268d5b8cdfc8a60e8e7bdc99810464fcd033f7c6.css"><meta property='og:title' content="Tags">
-<meta property='og:description' content="Example description">
+<link rel="stylesheet" href="/scss/style.min.7a49837e9a3d7a71df51418af3bf35209268740071f5af86bc0c6bf7e04a8c60.css"><meta property='og:title' content="Tags">
+<meta property='og:description' content="独立于此时的一个梦">
 <meta property='og:url' content='https://3pm4am.github.io/tags/'>
-<meta property='og:site_name' content='Example Site'>
+<meta property='og:site_name' content='倾覆线'>
 <meta property='og:type' content='website'><meta property='og:updated_time' content=' 2026-01-12T14:15:49&#43;08:00 '/>
 <meta name="twitter:title" content="Tags">
-<meta name="twitter:description" content="Example description"><link rel="alternate" type="application/rss&#43;xml" href="https://3pm4am.github.io/tags/index.xml">
+<meta name="twitter:description" content="独立于此时的一个梦"><link rel="alternate" type="application/rss&#43;xml" href="https://3pm4am.github.io/tags/index.xml">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+
+<style>
+ 
+:root {
+    --bg-light: url('/ds.png');
+    --bg-dark: url('/dr.png');
+    --current-bg: var(--bg-light);
+}
+
+html[data-scheme="dark"] {
+    --current-bg: var(--bg-dark);
+}
+
+body {
+    background-image: var(--current-bg) !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    min-height: 100vh !important;
+    background-color: transparent !important;
+     
+    transition: background-image 0.1s ease !important;
+}
+
+ 
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--current-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transition: opacity 0.1s ease;
+    pointer-events: none;
+}
+</style>
+
+<script>
+
+(function() {
+    'use strict';
+    
+    
+    ['/ds.png', '/dr.png'].forEach(src => {
+        const img = new Image();
+        img.src = src;
+    });
+    
+    
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.attributeName === 'data-scheme') {
+                
+                requestAnimationFrame(() => {
+                    
+                });
+            }
+        });
+    });
+    
+    observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-scheme']
+    });
+    
+})();
+</script>
+
     </head>
     <body class="">
     <script>
@@ -37,82 +114,43 @@
         }
     })();
 </script>
-<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+<div class="container main-container flex on-phone--column extended">
+
+<aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
     </button>
-
+    
     <header>
         
             
-            <figure class="site-avatar">
-                <a href="/">
-                
-                    
-                    
-                    
+                <figure class="site-avatar hidden-post">
+                    <a href="/">
                         
-                        <img src="/img/avatar_hu_b5976aa1afdc1d2e.png" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                            
+                            
+                            
+                                
+                                <img src="/img/avatar_hu_8a34d9c649de9c13.png" width="300"
+                                    height="300" class="site-logo" loading="lazy" alt="Avatar">
+                            
+                        
+                    </a>
                     
-                
-                </a>
-                
-                    <span class="emoji">🍥</span>
-                
-            </figure>
+                </figure>
             
         
-        
+
         <div class="site-meta">
-            <h1 class="site-name"><a href="/">Example Site</a></h1>
-            <h2 class="site-description">Example description</h2>
+            <h1 class="site-name hidden-post"><a href="/">倾覆线</a></h1>
+            <h2 class="site-description hidden-post">独立于此时的一个梦</h2>
         </div>
-    </header><ol class="menu-social">
-            
-                <li>
-                    <a 
-                        href='https://github.com/CaiJimmy/hugo-theme-stack'
-                        target="_blank"
-                        title="GitHub"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-</svg>
+    </header>
 
-
-
-                        
-                    </a>
-                </li>
-            
-                <li>
-                    <a 
-                        href='https://twitter.com'
-                        target="_blank"
-                        title="Twitter"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
-</svg>
-
-
-
-                        
-                    </a>
-                </li>
-            
-        </ol><ol class="menu" id="main-menu">
+    <ol class="menu" id="main-menu">
+        
         
         
         
@@ -131,13 +169,13 @@
 
 
                 
-                <span>Home</span>
+                    <span class="hidden-post">主页</span>
             </a>
         </li>
         
         
         <li >
-            <a href='/about/' >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
                 
                 
                 
@@ -150,7 +188,7 @@
 
 
                 
-                <span>About</span>
+                    <span class="hidden-post">关于</span>
             </a>
         </li>
         
@@ -170,7 +208,7 @@
 
 
                 
-                <span>Archives</span>
+                    <span class="hidden-post">归档</span>
             </a>
         </li>
         
@@ -189,13 +227,13 @@
 
 
                 
-                <span>Search</span>
+                    <span class="hidden-post">搜索</span>
             </a>
         </li>
         
         
         <li >
-            <a href='/links/' >
+            <a href='/%E5%8F%8B%E9%93%BE/' >
                 
                 
                 
@@ -208,41 +246,12 @@
 
 
                 
-                <span>Links</span>
+                    <span class="hidden-post">友链</span>
             </a>
         </li>
         
         <li class="menu-bottom-section">
             <ol class="menu">
-                    
-                        <li id="i18n-switch">  
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M4 5h7" />
-  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
-  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
-  <path d="M12 20l4 -9l4 9" />
-  <path d="M19.1 18h-6.2" />
-</svg>
-
-
-
-                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
-                                
-                                    <option value="https://3pm4am.github.io/" selected>English</option>
-                                
-                                    <option value="https://3pm4am.github.io/ja/" >日本語</option>
-                                
-                                    <option value="https://3pm4am.github.io/zh-cn/" >简体中文</option>
-                                
-                                    <option value="https://3pm4am.github.io/zh-tw/" >正體中文</option>
-                                
-                                    <option value="https://3pm4am.github.io/ar/" >عربي</option>
-                                
-                            </select>
-                        </li>
-                    
-                
 
                 
                     <li id="dark-mode-toggle">
@@ -262,7 +271,7 @@
 
 
 
-                        <span>Dark Mode</span>
+                        <span class="hidden-post">暗色模式</span>
                     </li>
                 
             </ol>
@@ -270,15 +279,37 @@
     </ol>
 </aside>
 
+<style>
+     
+    .hidden-post {
+        display: block;
+    }
+
+     
+    @media (min-width: 768px) {
+        
+    }
+
+     
+    @media (max-width: 767px) {
+        .hidden-post {
+            display: block !important;
+        }
+        #back-button {
+            display: none;
+        }
+    }
+</style>
+
     <aside class="sidebar right-sidebar sticky">
         
             
                 <form action="/search/" class="search-form widget" >
         <p>
-            <label>Search</label>
-            <input name="keyword" required placeholder="Type something..." />
+            <label>搜索</label>
+            <input name="keyword" required placeholder="输入关键词..." />
         
-            <button title="Search">
+            <button title="搜索">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="10" cy="10" r="7" />
@@ -303,7 +334,7 @@
 
 
         </div>
-        <h2 class="widget-title section-title">Archives</h2>
+        <h2 class="widget-title section-title">归档</h2>
 
         
         
@@ -315,6 +346,14 @@
                         
                             <span class="year">2026</span>
                             <span class="count">2</span>
+                        
+                    </a> 
+                </div>
+            <div class="archives-year">
+                    <a href="/archives/#2020">
+                        
+                            <span class="year">2020</span>
+                            <span class="count">1</span>
                         
                     </a> 
                 </div>
@@ -345,11 +384,11 @@
 
 
     </div>
-    <h2 class="widget-title section-title">Categories</h2>
+    <h2 class="widget-title section-title">分类</h2>
 
     <div class="tagCloud-tags">
         
-            <a href="/categories/test/" class="font_size_2">
+            <a href="/categories/test/" class="font_size_3">
                 Test
             </a>
         
@@ -363,6 +402,10 @@
         
             <a href="/categories/themes/" class="font_size_1">
                 Themes
+            </a>
+        
+            <a href="/categories/%E6%B5%8B%E8%AF%95/" class="font_size_1">
+                测试
             </a>
         
     </div>
@@ -382,36 +425,36 @@
 
 
     </div>
-    <h2 class="widget-title section-title">Tags</h2>
+    <h2 class="widget-title section-title">标签云</h2>
 
     <div class="tagCloud-tags">
         
             <a href="/tags/markdown/">
-                Markdown
+                Markdown<span class="tagCloud-count-main">2</span>
             </a>
         
             <a href="/tags/css/">
-                Css
+                Css<span class="tagCloud-count-main">1</span>
             </a>
         
             <a href="/tags/emoji/">
-                Emoji
+                Emoji<span class="tagCloud-count-main">1</span>
             </a>
         
             <a href="/tags/html/">
-                Html
+                Html<span class="tagCloud-count-main">1</span>
             </a>
         
             <a href="/tags/tag-with-whitespaces/">
-                Tag With Whitespaces
+                Tag With Whitespaces<span class="tagCloud-count-main">1</span>
             </a>
         
             <a href="/tags/text/">
-                Text
+                Text<span class="tagCloud-count-main">1</span>
             </a>
         
             <a href="/tags/themes/">
-                Themes
+                Themes<span class="tagCloud-count-main">1</span>
             </a>
         
     </div>
@@ -426,13 +469,13 @@
     <header>
         <h3 class="section-title">
             
-                Section
+                章节
             
         </h3>
 
         <div class="section-card">
             <div class="section-details">
-                <h3 class="section-count">7 pages</h3>
+                <h3 class="section-count">10 个页面</h3>
                 <h1 class="section-term">Tags</h1>
                 
             </div>
@@ -442,33 +485,60 @@
     <section class="article-list--compact">
         
             <article>
-    <a href="/tags/themes/">
-        <div class="article-details">
-            <h2 class="article-title">Themes</h2>
-            <footer class="article-time">
-                <time datetime='2019-03-11T00:00:00Z'>Mar 11, 2019</time>
-            </footer>
-        </div>
-    </a>
-</article>
-        
-            <article>
-    <a href="/tags/tag-with-whitespaces/">
-        <div class="article-details">
-            <h2 class="article-title">Tag With Whitespaces</h2>
-            <footer class="article-time">
-                <time datetime='2019-03-09T00:00:00Z'>Mar 09, 2019</time>
-            </footer>
-        </div>
-    </a>
-</article>
-        
-            <article>
     <a href="/tags/text/">
         <div class="article-details">
             <h2 class="article-title">Text</h2>
+			
             <footer class="article-time">
-                <time datetime='2019-03-09T00:00:00Z'>Mar 09, 2019</time>
+                <time datetime='2019-03-09T00:00:00Z'>2019-03-09</time>
+            </footer>
+        </div>
+    </a>
+</article>
+        
+            <article>
+    <a href="/tags/emoji/">
+        <div class="article-details">
+            <h2 class="article-title">Emoji</h2>
+			
+            <footer class="article-time">
+                <time datetime='2019-03-05T00:00:00Z'>2019-03-05</time>
+            </footer>
+        </div>
+    </a>
+</article>
+        
+            <article>
+    <a href="/tags/%D9%85%D8%A7%D8%B1%D9%83%D8%AF%D8%A7%D9%88%D9%86/">
+        <div class="article-details">
+            <h2 class="article-title">ماركداون</h2>
+			
+            <footer class="article-time">
+                <time datetime='0001-01-01T00:00:00Z'>0001-01-01</time>
+            </footer>
+        </div>
+    </a>
+</article>
+        
+            <article>
+    <a href="/tags/%D9%86%D8%B5/">
+        <div class="article-details">
+            <h2 class="article-title">نص</h2>
+			
+            <footer class="article-time">
+                <time datetime='0001-01-01T00:00:00Z'>0001-01-01</time>
+            </footer>
+        </div>
+    </a>
+</article>
+        
+            <article>
+    <a href="/tags/%D9%88%D8%B3%D9%85-%D9%85%D8%B9-%D9%81%D8%B1%D8%A7%D8%BA%D8%A7%D8%AA/">
+        <div class="article-details">
+            <h2 class="article-title">وسم مع فراغات</h2>
+			
+            <footer class="article-time">
+                <time datetime='0001-01-01T00:00:00Z'>0001-01-01</time>
             </footer>
         </div>
     </a>
@@ -478,28 +548,64 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
     </a><a class="page-link " aria-label="Page 1"href="/tags/">
         1
-    </a><a class="page-link current"aria-current="page"href="/tags/page/2/"
-                aria-label="Page 2">
-                2
-            </a><a class="page-link "href="/tags/page/3/"aria-label="Page 3">
-        3
-    </a><a class="page-link "href="/tags/page/3/"aria-label="Next page">
+    </a><a class="page-link current"aria-label="Page 2"aria-current="page">
+        2
+    </a><a class="page-link disabled"aria-label="Next page"aria-disabled="true">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
     </a>
 </nav><footer class="site-footer">
     <section class="copyright">
         &copy; 
         
-            2020 - 
-        
-        2026 Example Person
+        2026 3pm4am All rights reserved. 禁止转载。
     </section>
+
     
+<section class="running-time">
+本博客已稳定运行
+<span id="runningdays" class="running-days"></span>
+</section>
+
+
+<section class="totalcount">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    发表了7篇文章 · 
+    总计2.15k字
+</section>
+
     <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
+
+
+
+
+
 
 
             </main>
@@ -508,7 +614,38 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.3c36bda76740ec8dfb84b2007ea574464cd3758886b66b558564d7a70946adb5.js" defer></script>
+<script>
+    function backToTop() {
+      document.documentElement.scrollIntoView({
+        behavior: 'smooth',
+      })
+    }
+  
+    window.onload = function () {
+      let scrollTop =
+        this.document.documentElement.scrollTop || this.document.body.scrollTop
+      let totopBtn = this.document.getElementById('back-to-top')
+      if (scrollTop > 0) {
+        totopBtn.style.display = 'inline'
+      } else {
+        totopBtn.style.display = 'none'
+      }
+    }
+  
+    window.onscroll = function () {
+      let scrollTop =
+        this.document.documentElement.scrollTop || this.document.body.scrollTop
+      let totopBtn = this.document.getElementById('back-to-top')
+      if (scrollTop < 200) {
+        totopBtn.style.display = 'none'
+      } else {
+        totopBtn.style.display = 'inline'
+        totopBtn.addEventListener('click', backToTop, false)
+      }
+    }
+  </script>
+
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -519,6 +656,198 @@
 
         document.head.appendChild(customFont);
     }());
+</script>
+
+
+<a href="#" id="back-to-top" title="返回顶部"></a>
+
+
+<style>
+  #back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 15px;
+    width: 40px;  
+    height: 40px;  
+    border-radius: 50%;  
+    background-color: var(--body-background);
+    box-shadow: var(--shadow-l2);
+    font-size: 20px;  
+    text-align: center;
+    line-height: 38px;  
+    cursor: pointer;
+    transition:
+      transform 0.3s ease,
+      background-color 0.3s ease;  
+  }
+
+  #back-to-top:before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    transform: rotate(135deg);
+    height: 8px;  
+    width: 8px;  
+    border-width: 0 0 2px 2px;
+    border-color: var(--back-to-top-color);
+    border-style: solid;
+  }
+
+  #back-to-top:hover {
+    transform: scale(1.1);  
+    background-color: var(--accent-background);  
+  }
+
+  #back-to-top:hover:before {
+    border-color: var(--accent-color);  
+  }
+
+   
+  @media screen and (max-width: 768px) {
+    #back-to-top {
+      bottom: 5px;
+      right: var(--container-padding);
+      width: 30px;  
+      height: 30px;
+      font-size: 16px;
+      line-height: 32px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    #back-to-top {
+      bottom: 10px;
+      right: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    #back-to-top {
+      bottom: 15px;
+      right: 25px;
+    }
+  }
+
+  @media screen and (min-width: 1536px) {
+    #back-to-top {
+      bottom: 15px;
+      right: 25px;
+       
+    }
+  }
+</style>
+
+<style>
+  @font-face {
+    font-family: 'WenYuanSerifSC-Regular';
+    src: url(https://3pm4am.github.io/font/WenYuanSerifSC-Regular.ttf) format('truetype');
+  }
+
+  :root {
+    --base-font-family: 'WenYuanSerifSC-Regular';
+    --code-font-family: 'WenYuanSerifSC-Regular';
+  }
+</style>
+
+<style>
+    #TableOfContents > ul, ol {
+        ul, ol {
+            display: none;
+        }
+        .open {
+            display: block;
+        }
+    }
+</style>
+
+<script>
+    function initTocHide() {
+        
+        let toc = document.querySelector(".widget--toc");
+        if (!toc) {
+            return;
+        }
+        
+        window.addEventListener('scroll', function() {
+            
+            let openUl = document.querySelectorAll(".open");
+            if (openUl.length > 0) {
+              openUl.forEach((ul) => {
+                ul.classList.remove("open")
+              })
+            }
+            
+            let currentLi = document.querySelector(".active-class");
+            if (!currentLi) {
+                return
+            }
+            
+            if (currentLi.children.length > 1) {
+                currentLi.children[1].classList.add("open")
+            }
+            
+            let ul = currentLi.parentElement;
+            do {
+                ul.classList.add("open");
+                ul = ul.parentElement.parentElement
+            } while (ul !== undefined && (ul.localName === 'ul' || ul.localName === 'ol'))
+        });
+    }
+    initTocHide()
+</script>
+
+
+<script>
+    let s1 = '2026-1-12'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟";
+    document.getElementById('runningdays').innerHTML = result;
+</script>
+
+
+
+
+<script>
+
+(function() {
+    
+    function setBg() {
+        var scheme = document.documentElement.getAttribute('data-scheme') || 'light';
+        var img = scheme === 'dark' ? '/dr.png' : '/ds.png';
+        
+        document.body.style.cssText += 
+            'background-image: url("' + img + '") !important;' +
+            'background-size: cover !important;' +
+            'background-attachment: fixed !important;' +
+            'background-position: center !important;' +
+            'background-repeat: no-repeat !important;' +
+            'min-height: 100vh !important;' +
+            'background-color: transparent !important;';
+    }
+    
+    
+    setBg();
+    
+    
+    setInterval(setBg, 1000);
+    
+    
+    var originalSwitch = window.switchThemeScheme;
+    if (typeof originalSwitch === 'function') {
+        window.switchThemeScheme = function() {
+            originalSwitch.apply(this, arguments);
+            setTimeout(setBg, 100);
+        };
+    }
+})();
 </script>
 
     </body>
