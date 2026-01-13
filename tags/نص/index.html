@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://3pm4am.github.io/tags/%D9%86%D8%B5/'>
 
-<link rel="stylesheet" href="/scss/style.min.7a49837e9a3d7a71df51418af3bf35209268740071f5af86bc0c6bf7e04a8c60.css"><meta property='og:title' content="Tag: نص - 倾覆线">
+<link rel="stylesheet" href="/scss/style.min.bf2199fe2564f1092b60af0701a81615837bd5dc57e1ab1241581630d2fe4567.css"><meta property='og:title' content="Tag: نص - 倾覆线">
 <meta property='og:description' content="独立于此时的一个梦">
 <meta property='og:url' content='https://3pm4am.github.io/tags/%D9%86%D8%B5/'>
 <meta property='og:site_name' content='倾覆线'>
@@ -576,7 +576,11 @@ body::before {
         totopBtn.addEventListener('click', backToTop, false)
       }
     }
+
   </script>
+
+<script src="https://cdn.jsdelivr.net/gh/ZhaoUncle/image@main/static/mouse-click.js"></script>
+<canvas width="1777" height="841" style="position: fixed; left: 0px; top: 0px; z-index: 2147483647; pointer-events: none;"></canvas>
 
 <script>
     (function () {
@@ -670,6 +674,124 @@ body::before {
   }
 </style>
 
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<div id="aplayer"></div>
+
+<script>
+    
+    const musicDir = '\/music\/';
+    const songs = [
+        '削いで、-r906',
+        '조깅-LUCY',
+        'もうじき夏が終わるから-nbuna',
+        'Love is lonely-NMIXX',
+        'フィクションブルー-Ayase',
+        'Endless-onewe',
+        'tat-hitorie',
+        'Doughnut-Twice',
+        'Ditto-Newjeans',
+        'Rooftop-Nflying'
+    ];
+
+    let audios = [];
+    songs.forEach(item => {
+        const songInfo = item.split('-');
+        audios.push({
+            name: songInfo[0],
+            artist: songInfo[1],
+            url: musicDir + encodeURIComponent(item) + '/song.mp3',
+            cover: musicDir + encodeURIComponent(item) + '/cover.png',
+        });
+    });
+
+    const ap = new APlayer({
+        container: document.getElementById('aplayer'),
+		fixed: true,
+        audio: audios
+    });
+</script>
+
+<script>
+	    
+
+	    window.onbeforeunload = () => {
+	        
+	        const playInfo = {
+	            index: ap.list.index,
+	            currentTime: ap.audio.currentTime,
+	            paused: ap.paused
+	        };
+	        localStorage.setItem("playInfo", JSON.stringify(playInfo));
+	    };
+	
+	    
+
+	    window.onload = () => {
+	        
+	        const playInfo = JSON.parse(localStorage.getItem("playInfo"));
+	        if (!playInfo) {
+	            return;
+	        }
+	        
+	        ap.list.switch(playInfo.index);
+	        
+	        setTimeout(() => {
+	            
+	            ap.seek(playInfo.currentTime);
+	            
+	            if (!playInfo.paused) {
+	                ap.play()
+	            }
+	        }, 500);
+	    };
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
+
+
+
+<script>
+    var pjax = new Pjax({
+        selectors: [".main-container"]
+    })
+	
+	pjax._handleResponse = pjax.handleResponse;
+	
+	pjax.handleResponse = function(responseText, request, href, options) {
+	  if (request.responseText.match("<html")) {
+	     
+	    let newDom = new DOMParser().parseFromString(responseText, 'text/html');
+	    
+	    let bodyClass = newDom.body.className;
+	    document.body.setAttribute("class", bodyClass)
+		
+	    pjax._handleResponse(responseText, request, href, options);
+	   } else {
+	     
+	   }
+    }
+	
+	
+	    topbar.config({
+	        barColors: {
+	            '0': 'rgba(255,  255, 255, 1)', 
+	            '1.0': 'rgba(0, 170, 14, 1.0)' 
+	        }
+	    })
+	
+	document.addEventListener('pjax:send', () => {
+	        topbar.show();
+	    })
+		
+	document.addEventListener('pjax:complete', () => {
+	        
+	        window.Stack.init();
+			
+			topbar.hide();
+	    })
+</script>
+
 <style>
   @font-face {
     font-family: 'WenYuanSerifSC-Regular';
@@ -730,6 +852,20 @@ body::before {
 </script>
 
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<div id="aplayer"></div>
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<script>
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    audio: []
+});
+</script>
+
+
+
+
 <script>
     let s1 = '2026-1-12'; 
     s1 = new Date(s1.replace(/-/g, "/"));
@@ -743,9 +879,6 @@ body::before {
     let result = days + "天" + hours + "小时" + minutes + "分钟";
     document.getElementById('runningdays').innerHTML = result;
 </script>
-
-
-
 
 <script>
 
