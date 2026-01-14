@@ -8,13 +8,38 @@
         <language>zh-cn</language>
         <copyright>3pm4am All rights reserved. 禁止转载。</copyright>
         <lastBuildDate>Tue, 13 Jan 2026 20:13:01 +0800</lastBuildDate><atom:link href="https://3pm4am.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>博客优化参考</title>
-        <link>https://3pm4am.github.io/p/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E5%8F%82%E8%80%83/</link>
+        <title>博客搭建及优化参考资料</title>
+        <link>https://3pm4am.github.io/p/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BC%98%E5%8C%96%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/</link>
         <pubDate>Tue, 13 Jan 2026 20:13:01 +0800</pubDate>
         
-        <guid>https://3pm4am.github.io/p/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E5%8F%82%E8%80%83/</guid>
-        <description>&lt;p&gt;排名只代表我抄的顺序，不代表其他任何~&lt;br&gt;
+        <guid>https://3pm4am.github.io/p/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BC%98%E5%8C%96%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/</guid>
+        <description>&lt;h2 id=&#34;感谢名单&#34;&gt;感谢名单
+&lt;/h2&gt;&lt;p&gt;排名只代表我抄的顺序，不代表其他任何~&lt;br&gt;
 谢谢大人们（再次）！&lt;br&gt;
+-&lt;a class=&#34;link&#34; href=&#34;https://blog.mitchi.moe/posts/simplegitpagetutorial/simplegitpagetutorial/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;快速使用GitHub Pages + Hugo建站指南&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+&lt;br&gt;
+-&lt;a class=&#34;link&#34; href=&#34;https://letere-gzj.github.io/hugo-stack/p/hugo/custom-blog/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【Hugo】Hugo + Github 免费部署自己的博客&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+&lt;br&gt;
 -&lt;a class=&#34;link&#34; href=&#34;https://thirdshire.com/hugo-stack-renovation/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hugo Stack主题装修笔记&lt;/a&gt;
 
@@ -123,6 +148,97 @@
 &lt;/svg&gt;&lt;/span&gt;
 
 &lt;/p&gt;
+&lt;h2 id=&#34;其他配置&#34;&gt;其他“配置”
+&lt;/h2&gt;&lt;p&gt;头像：&lt;a class=&#34;link&#34; href=&#34;https://x.com/pumupuz?s=21&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;퓨므퓨&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+&lt;br&gt;
+字体：文源宋体&lt;br&gt;
+背景：动森明信片&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>银魂</title>
+        <link>https://3pm4am.github.io/p/%E9%93%B6%E9%AD%82/</link>
+        <pubDate>Tue, 09 Jan 2024 18:00:50 +0800</pubDate>
+        
+        <guid>https://3pm4am.github.io/p/%E9%93%B6%E9%AD%82/</guid>
+        <description>&lt;img src="https://cdn.jsdelivr.net/gh/3pm4am/picgo@main/images/IMG_6965.JPG" alt="Featured image of post 银魂" /&gt;&lt;div class=&#34;db-card&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;&lt;img loading=&#34;lazy&#34; decoding=&#34;async&#34; referrerpolicy=&#34;no-referrer&#34; src=&#34;https://cdn.jsdelivr.net/gh/3pm4am/picgo@main/images/%E9%93%B6%E9%AD%82.jpeg&#34;&gt;&lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;&lt;a href=&#34;https://www.anime-gintama.com/#&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;《银魂》空知英秋&lt;/a&gt;&lt;/div&gt;
+            &lt;div class=&#34;rating&#34;&gt;
+                &lt;span class=&#34;rating_nums&#34;&gt;&lt;/span&gt;&lt;span class=&#34;allstardark&#34;&gt;&lt;span class=&#34;allstarlight&#34; style=&#34;width:90%&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;rating_float&#34;&gt;&lt;/span&gt;&lt;/span&gt;
+                &lt;span class=&#34;rating_float&#34;&gt;&amp;lt; 9.1 &gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34;&gt; &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34;&gt;漫画&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;读后感&#34;&gt;读后感
+&lt;/h2&gt;&lt;p&gt;从剧情来说只有8.5的，但空知真的很会画帅哥美女……附上银时帅照一张表示我被贿赂了（谁在乎&lt;br&gt;
+前期是真的很好看，记得看到一百多话的时候我还感慨过空知也太会吐槽了，出场角色设定新颖，偶尔一支线很好看。直到五百多话还在吐槽，我才真的看累了，因为没啥新角色，换着梗恶搞，绕不开的OO话题，有时候看着确实恶心哇！还好后面没多久就进入将军篇了，感觉空知夺回了被夺舍的身体（）将军篇和真选组篇特别好看，我本来是用银魂当摸鱼时的消遣，六百多话都在家里看了，但江户篇一上来就吐槽，落差好大，而且尬。换个角度想，也是万事屋回到了熟人身边可以放松一下，还好最后五十话还算好看，万事屋重聚时定春汪的一声甚至给我看泪目了啊啊啊好狗狗。不喜欢的一点是，最后真选组再出场还不如停留在他们离开江户。感觉就是来当垫脚石，群像剧需要真选组回来所以回来了……岛上土方和近藤对话特别好，冲田说他只认副长归队，山崎回忆过去，一群人和白衣队（忘名字了）互帮互助，做的每一件事都很有魅力。唉。还有个不喜欢的是江户篇里回忆太多太多了，我看漫画都嫌多，不知道动画会不会更啰嗦。理解群像要q 到每个角色的话得从白天念到黑夜，但是战斗时的回忆真的没必要这么多吧！而且两年后新八出场介绍了一遍，鸡蛋小姐醒来又挨个介绍一遍，空知你不嫌累吗。&lt;br&gt;
+不过还是不能否认银魂很好看。万事屋三人组和一狗我特别喜欢，轮到他们主场我会反复观看，哎呀……看银魂像躲进一个桃花源，虽说有战争但是还有大家TT 很多支线我都爱看，早知道该开个串的。或者等我几年后二刷……&lt;/p&gt;
+&lt;h2 id=&#34;260114再谈&#34;&gt;26.01.14再谈
+&lt;/h2&gt;&lt;p&gt;记得当时点开银魂动画两次，连第十一集的门都没摸到，幸好还愿意给漫画机会。漫画前期大家都好美帅啊一下就沉迷了，虽然两年前说会二刷但我至今没有这个想法！或者会看动画吧，我刷到过神乐的配音好萌。其实银魂的屎尿屁文学我真的不喜欢可能还没开放到那个程度，但我直到现在都很喜欢银魂式标题的风格ww 也直到现在没公开说过自己在银魂萌的产品呵呵。&lt;/p&gt;
+
+    &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css&#34;&gt;
+    
+    &lt;div class=&#34;swiper-container&#34;&gt;
+        &lt;div class=&#34;swiper-wrapper&#34;&gt;
+            
+            
+            &lt;div class=&#34;swiper-slide&#34;&gt;
+                &lt;img src=&#34;https://cdn.jsdelivr.net/gh/3pm4am/picgo@main/images/9e913cb84a78b06b7dac1d9d9e908dcb.JPG&#34; alt=&#34;&#34;&gt;
+            &lt;/div&gt;
+            
+            &lt;div class=&#34;swiper-slide&#34;&gt;
+                &lt;img src=&#34;https://cdn.jsdelivr.net/gh/3pm4am/picgo@main/images/467525762efe73e922a0cd6ffede0d3b.JPG&#34; alt=&#34;&#34;&gt;
+            &lt;/div&gt;
+            
+            &lt;div class=&#34;swiper-slide&#34;&gt;
+                &lt;img src=&#34;https://cdn.jsdelivr.net/gh/3pm4am/picgo@main/images/e562083ca232bfffbc9bcb7b561a9e2f.PNG&#34; alt=&#34;&#34;&gt;
+            &lt;/div&gt;
+            
+        &lt;/div&gt;
+        
+        &lt;div class=&#34;swiper-pagination&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js&#34;&gt;&lt;/script&gt;
+     
+     &lt;script&gt;
+        var swiper = new Swiper(&#39;.swiper-container&#39;, {
+            pagination: &#39;.swiper-pagination&#39;,
+            paginationClickable: true,
+        
+        autoHeight: true,
+        
+        keyboardControl : true,
+        
+        mousewheelControl : true,
+        
+        
+        
+        lazyLoading : true,
+		lazyLoadingInPrevNext : true,
+		
+		loop : true,
+        });
+        &lt;/script&gt;
+
+
 </description>
         </item>
         

@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://3pm4am.github.io/page/'>
 
-<link rel="stylesheet" href="/scss/style.min.86e0534bd9afafaffa300f69b14ff341609fd5a5e02d13b07b3eca3d328fa69a.css"><meta property='og:title' content="Pages">
+<link rel="stylesheet" href="/scss/style.min.0c584dbb32eec24ccefa2f304d7625ea6b511919639368f373e914dfd6f99a79.css"><meta property='og:title' content="Pages">
 <meta property='og:description' content="独立于此时的一个梦">
 <meta property='og:url' content='https://3pm4am.github.io/page/'>
 <meta property='og:site_name' content='倾覆线'>
@@ -349,6 +349,14 @@ body::before {
                         
                     </a> 
                 </div>
+            <div class="archives-year">
+                    <a href="/archives/#2024">
+                        
+                            <span class="year">2024</span>
+                            <span class="count">1</span>
+                        
+                    </a> 
+                </div>
             
         </div>
     </section>
@@ -371,6 +379,10 @@ body::before {
     <h2 class="widget-title section-title">分类</h2>
 
     <div class="tagCloud-tags">
+        
+            <a href="/categories/24%E5%B9%B4%E6%BC%AB%E7%94%BB/" class="font_size_1">
+                24年漫画
+            </a>
         
     </div>
 </section>
@@ -501,8 +513,10 @@ body::before {
     
         
     
-    发表了1篇文章 · 
-    总计0.88k字
+        
+    
+    发表了2篇文章 · 
+    总计1.78k字
 </section>
 
     <section class="powerby">
@@ -523,7 +537,7 @@ body::before {
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.05ec7b421f7433f8d285b3cfaaf5a60494ce38e46ae8d070a441a80101487fd5.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.3216ea41dc1465b8e231d4d241b4d10c4240d6a5150865346fc133e5bd1c0dfd.js" defer></script>
 <script>
     function backToTop() {
       document.documentElement.scrollIntoView({
@@ -863,22 +877,35 @@ const ap = new APlayer({
 </script>
 
 
-
-
-
 <script>
-    let s1 = '2026-1-12'; 
+function updateRunningTime() {
+    const el = document.getElementById('runningdays');
+    if (!el) return;
+
+    let s1 = '2026-1-12';
     s1 = new Date(s1.replace(/-/g, "/"));
     let s2 = new Date();
+
     let timeDifference = s2.getTime() - s1.getTime();
 
     let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
     let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
 
-    let result = days + "天" + hours + "小时" + minutes + "分钟";
-    document.getElementById('runningdays').innerHTML = result;
+    el.textContent = days + "天" + hours + "小时" + minutes + "分钟";
+}
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    updateRunningTime();
+});
+</script>
+<script>
+document.addEventListener("pjax:complete", function () {
+    updateRunningTime();
+});
+</script>
+
 
 <script>
 
