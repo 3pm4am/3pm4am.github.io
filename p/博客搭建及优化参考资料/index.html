@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://3pm4am.github.io/p/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BC%98%E5%8C%96%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/'>
 
-<link rel="stylesheet" href="/scss/style.min.378def962f2c7920abca4b273132fce50f6bedb4053b30a2aeb92d7982f1e83f.css"><meta property='og:title' content="博客搭建及优化参考资料">
+<link rel="stylesheet" href="/scss/style.min.8383be5921db08f3df1d15e769683e7a06ef33ef08e91b4acb8b01d7eb42edba.css"><meta property='og:title' content="博客搭建及优化参考资料">
 <meta property='og:description' content="感谢大人们让我有作业可抄">
 <meta property='og:url' content='https://3pm4am.github.io/p/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BC%98%E5%8C%96%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/'>
 <meta property='og:site_name' content='倾覆线'>
@@ -669,6 +669,18 @@ body::before {
         fill="currentColor">
 </svg></span>
 
+<br>
+-<a class="link" href="https://ryihuan.github.io/p/%E4%BD%A0%E5%A5%BDstack%E4%B8%BB%E9%A2%98/"  target="_blank" rel="noopener"
+    >你好，stack主题</a>
+
+
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
 </p>
 <h2 id="其他配置">其他“配置”
 </h2><p>头像：<a class="link" href="https://x.com/pumupuz?s=21"  target="_blank" rel="noopener"
@@ -749,8 +761,20 @@ body::before {
     
         
     
-    发表了2篇文章 · 
-    总计1.79k字
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    发表了8篇文章 · 
+    总计4.58k字
 </section>
 
     <section class="powerby">
@@ -1218,6 +1242,26 @@ document.addEventListener("pjax:complete", function () {
     updateRunningTime();
 });
 </script>
+
+
+<script>
+document.addEventListener('click', function (e) {
+    const article = e.target.closest('article');
+    if (!article) return;
+
+    
+    if (e.target.closest('.article-category a, .article-tags a, a')) {
+        return;
+    }
+
+    const titleLink = article.querySelector('.article-title a');
+    if (titleLink && titleLink.href) {
+        window.location.href = titleLink.href;
+    }
+}, true); 
+</script>
+
+
 
 
 <script>

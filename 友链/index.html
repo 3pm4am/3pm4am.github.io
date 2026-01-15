@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://3pm4am.github.io/%E5%8F%8B%E9%93%BE/'>
 
-<link rel="stylesheet" href="/scss/style.min.378def962f2c7920abca4b273132fce50f6bedb4053b30a2aeb92d7982f1e83f.css"><meta property='og:title' content="友链">
+<link rel="stylesheet" href="/scss/style.min.8383be5921db08f3df1d15e769683e7a06ef33ef08e91b4acb8b01d7eb42edba.css"><meta property='og:title' content="友链">
 <meta property='og:description' content="To use this feature, add links section to frontmatter.\nThis page&rsquo;s frontmatter:\n1 2 3 4 5 6 7 8 9 links: - title: GitHub description: GitHub is the world&#39;s largest software development platform. website: https://github.com image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png - title: TypeScript description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. website: https://www.typescriptlang.org image: ts-logo-128.jpg image field accepts both local and external images.\n">
 <meta property='og:url' content='https://3pm4am.github.io/%E5%8F%8B%E9%93%BE/'>
 <meta property='og:site_name' content='倾覆线'>
@@ -469,8 +469,20 @@ body::before {
     
         
     
-    发表了2篇文章 · 
-    总计1.79k字
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    发表了8篇文章 · 
+    总计4.58k字
 </section>
 
     <section class="powerby">
@@ -938,6 +950,26 @@ document.addEventListener("pjax:complete", function () {
     updateRunningTime();
 });
 </script>
+
+
+<script>
+document.addEventListener('click', function (e) {
+    const article = e.target.closest('article');
+    if (!article) return;
+
+    
+    if (e.target.closest('.article-category a, .article-tags a, a')) {
+        return;
+    }
+
+    const titleLink = article.querySelector('.article-title a');
+    if (titleLink && titleLink.href) {
+        window.location.href = titleLink.href;
+    }
+}, true); 
+</script>
+
+
 
 
 <script>
