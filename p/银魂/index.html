@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://3pm4am.github.io/p/%E9%93%B6%E9%AD%82/'>
 
-<link rel="stylesheet" href="/scss/style.min.0c584dbb32eec24ccefa2f304d7625ea6b511919639368f373e914dfd6f99a79.css"><meta property='og:title' content="银魂">
+<link rel="stylesheet" href="/scss/style.min.378def962f2c7920abca4b273132fce50f6bedb4053b30a2aeb92d7982f1e83f.css"><meta property='og:title' content="银魂">
 <meta property='og:description' content="这部是真·一把屎一把尿把观众养大">
 <meta property='og:url' content='https://3pm4am.github.io/p/%E9%93%B6%E9%AD%82/'>
 <meta property='og:site_name' content='倾覆线'>
@@ -574,50 +574,69 @@ body::before {
 <h2 id="260114再谈">26.01.14再谈
 </h2><p>记得当时点开银魂动画两次，连第十一集的门都没摸到，幸好还愿意给漫画机会。漫画前期大家都好美帅啊一下就沉迷了，虽然两年前说会二刷但我至今没有这个想法！或者会看动画吧，我刷到过神乐的配音好萌。其实银魂的屎尿屁文学我真的不喜欢可能还没开放到那个程度，但我直到现在都很喜欢银魂式标题的风格ww 也直到现在没公开说过自己在银魂萌的产品呵呵。</p>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
-    
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            
-            
-            <div class="swiper-slide">
-                <img src="https://cdn.jsdelivr.net/gh/3pm4am/picgo@main/images/9e913cb84a78b06b7dac1d9d9e908dcb.JPG" alt="">
-            </div>
-            
-            <div class="swiper-slide">
-                <img src="https://cdn.jsdelivr.net/gh/3pm4am/picgo@main/images/467525762efe73e922a0cd6ffede0d3b.JPG" alt="">
-            </div>
-            
-            <div class="swiper-slide">
-                <img src="https://cdn.jsdelivr.net/gh/3pm4am/picgo@main/images/e562083ca232bfffbc9bcb7b561a9e2f.PNG" alt="">
-            </div>
-            
-        </div>
-        
-        <div class="swiper-pagination"></div>
-    </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
-     
-     <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
+<div class="swiper-container imgloop">
+  <div class="swiper-wrapper">
+    
+    
+    <div class="swiper-slide">
+      <img src="https://cdn.jsdelivr.net/gh/3pm4am/picgo@main/images/9e913cb84a78b06b7dac1d9d9e908dcb.JPG" alt="">
+    </div>
+    
+    <div class="swiper-slide">
+      <img src="https://cdn.jsdelivr.net/gh/3pm4am/picgo@main/images/467525762efe73e922a0cd6ffede0d3b.JPG" alt="">
+    </div>
+    
+    <div class="swiper-slide">
+      <img src="https://cdn.jsdelivr.net/gh/3pm4am/picgo@main/images/e562083ca232bfffbc9bcb7b561a9e2f.PNG" alt="">
+    </div>
+    
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+<script>
+function initImgLoop() {
+    var container = document.querySelector('.swiper-container.imgloop');
+    if (!container || typeof Swiper === 'undefined') return;
+
+    
+    if (container.swiper) {
+        container.swiper.update();
+        return;
+    }
+
+    
+    setTimeout(function () {
+        var swiper = new Swiper(container, {
+            pagination: container.querySelector('.swiper-pagination'),
             paginationClickable: true,
-        
-        autoHeight: true,
-        
-        keyboardControl : true,
-        
-        mousewheelControl : true,
-        
-        
-        
-        lazyLoading : true,
-		lazyLoadingInPrevNext : true,
-		
-		loop : true,
+
+            
+            slidesPerView: 1,
+            spaceBetween: 12,
+            autoHeight: true,
+
+            simulateTouch: true,
+            touchRatio: 1,
+            touchStartPreventDefault: false,
+
+            observer: true,
+            observeParents: true,
+
+            loop: false   
         });
-        </script>
+
+        
+        swiper.update();
+    }, 0);
+}
+
+document.addEventListener('DOMContentLoaded', initImgLoop);
+document.addEventListener('pjax:complete', initImgLoop);
+</script>
 
 
 
@@ -684,7 +703,7 @@ body::before {
         
     
     发表了2篇文章 · 
-    总计1.78k字
+    总计1.79k字
 </section>
 
     <section class="powerby">

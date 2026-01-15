@@ -35,50 +35,69 @@
 &lt;h2 id=&#34;260114再谈&#34;&gt;26.01.14再谈
 &lt;/h2&gt;&lt;p&gt;记得当时点开银魂动画两次，连第十一集的门都没摸到，幸好还愿意给漫画机会。漫画前期大家都好美帅啊一下就沉迷了，虽然两年前说会二刷但我至今没有这个想法！或者会看动画吧，我刷到过神乐的配音好萌。其实银魂的屎尿屁文学我真的不喜欢可能还没开放到那个程度，但我直到现在都很喜欢银魂式标题的风格ww 也直到现在没公开说过自己在银魂萌的产品呵呵。&lt;/p&gt;
 
-    &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css&#34;&gt;
-    
-    &lt;div class=&#34;swiper-container&#34;&gt;
-        &lt;div class=&#34;swiper-wrapper&#34;&gt;
-            
-            
-            &lt;div class=&#34;swiper-slide&#34;&gt;
-                &lt;img src=&#34;https://cdn.jsdelivr.net/gh/3pm4am/picgo@main/images/9e913cb84a78b06b7dac1d9d9e908dcb.JPG&#34; alt=&#34;&#34;&gt;
-            &lt;/div&gt;
-            
-            &lt;div class=&#34;swiper-slide&#34;&gt;
-                &lt;img src=&#34;https://cdn.jsdelivr.net/gh/3pm4am/picgo@main/images/467525762efe73e922a0cd6ffede0d3b.JPG&#34; alt=&#34;&#34;&gt;
-            &lt;/div&gt;
-            
-            &lt;div class=&#34;swiper-slide&#34;&gt;
-                &lt;img src=&#34;https://cdn.jsdelivr.net/gh/3pm4am/picgo@main/images/e562083ca232bfffbc9bcb7b561a9e2f.PNG&#34; alt=&#34;&#34;&gt;
-            &lt;/div&gt;
-            
-        &lt;/div&gt;
-        
-        &lt;div class=&#34;swiper-pagination&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css&#34;&gt;
 
-    &lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js&#34;&gt;&lt;/script&gt;
-     
-     &lt;script&gt;
-        var swiper = new Swiper(&#39;.swiper-container&#39;, {
-            pagination: &#39;.swiper-pagination&#39;,
+&lt;div class=&#34;swiper-container imgloop&#34;&gt;
+  &lt;div class=&#34;swiper-wrapper&#34;&gt;
+    
+    
+    &lt;div class=&#34;swiper-slide&#34;&gt;
+      &lt;img src=&#34;https://cdn.jsdelivr.net/gh/3pm4am/picgo@main/images/9e913cb84a78b06b7dac1d9d9e908dcb.JPG&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;swiper-slide&#34;&gt;
+      &lt;img src=&#34;https://cdn.jsdelivr.net/gh/3pm4am/picgo@main/images/467525762efe73e922a0cd6ffede0d3b.JPG&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;swiper-slide&#34;&gt;
+      &lt;img src=&#34;https://cdn.jsdelivr.net/gh/3pm4am/picgo@main/images/e562083ca232bfffbc9bcb7b561a9e2f.PNG&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    
+  &lt;/div&gt;
+  &lt;div class=&#34;swiper-pagination&#34;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;
+function initImgLoop() {
+    var container = document.querySelector(&#39;.swiper-container.imgloop&#39;);
+    if (!container || typeof Swiper === &#39;undefined&#39;) return;
+
+    
+    if (container.swiper) {
+        container.swiper.update();
+        return;
+    }
+
+    
+    setTimeout(function () {
+        var swiper = new Swiper(container, {
+            pagination: container.querySelector(&#39;.swiper-pagination&#39;),
             paginationClickable: true,
-        
-        autoHeight: true,
-        
-        keyboardControl : true,
-        
-        mousewheelControl : true,
-        
-        
-        
-        lazyLoading : true,
-		lazyLoadingInPrevNext : true,
-		
-		loop : true,
+
+            
+            slidesPerView: 1,
+            spaceBetween: 12,
+            autoHeight: true,
+
+            simulateTouch: true,
+            touchRatio: 1,
+            touchStartPreventDefault: false,
+
+            observer: true,
+            observeParents: true,
+
+            loop: false   
         });
-        &lt;/script&gt;
+
+        
+        swiper.update();
+    }, 0);
+}
+
+document.addEventListener(&#39;DOMContentLoaded&#39;, initImgLoop);
+document.addEventListener(&#39;pjax:complete&#39;, initImgLoop);
+&lt;/script&gt;
 
 
 </description>
