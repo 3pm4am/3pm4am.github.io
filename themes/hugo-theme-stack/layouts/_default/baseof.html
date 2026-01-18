@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" dir="{{ default `ltr` .Language.LanguageDirection }}">
+    <head>
+        {{- partial "head/head.html" . -}}
+        {{- block "head" . -}}{{ end }}
+
+<style>
+/* 提前定义CSS变量和过渡 */
+:root {
+    --bg-light: url('/ds.png');
+    --bg-dark: url('/dr.png');
+    --current-bg: var(--bg-light);
+}
+
+html[data-scheme="dark"] {
+    --current-bg: var(--bg-dark);
+}
+
+body {
+    background-image: var(--current-bg) !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    min-height: 100vh !important;
+    background-color: transparent !important;
+    /* 添加平滑过渡 */
+    transition: background-image 0.1s ease !important;
+}
+
+/* 优化过渡性能 */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--current-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transition: opacity 0.1s ease;
+    pointer-events: none;
+}
+</style>
+
+<script>
+// 使用CSS变量切换，更加平滑
+(function() {
+    'use strict';
+    
+    // 预加载图片
+    ['/ds.png', '/dr.png'].forEach(src => {
+        const img = new Image();
+        img.src = src;
+    });
+    
+    // 监听主题切换，立即更新CSS变量
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.attributeName === 'data-scheme') {
+                // 使用requestAnimationFrame确保同步
+                requestAnimationFrame(() => {
+                    // CSS变量会自动更新，无需额外操作
+                });
+            }
+        });
+    });
+    
+    observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-scheme']
+    });
+    
+})();
+</script>
+
+    </head>
+    <body class="{{ block `body-class` . }}{{ end }}">
+        {{- partial "head/colorScheme" . -}}
+
+        {{/* The container is wider when there's any activated widget */}}
+        {{- $hasWidget := false -}}
+        {{- range .Site.Params.widgets -}}
+            {{- if gt (len .) 0 -}}
+                {{- $hasWidget = true -}}
+            {{- end -}}
+        {{- end -}}
+        <div class="container main-container flex on-phone--column {{ if $hasWidget }}extended{{ else }}compact{{ end }}">
+            {{- block "left-sidebar" . -}}
+                {{ partial "sidebar/left.html" . }}
+            {{- end -}}
+            {{- block "right-sidebar" . -}}{{ end }}
+            <main class="main full-width">
+                {{- block "main" . }}{{- end }}
+            </main>
+        </div>
+        {{ partial "footer/include.html" . }}
+
+<script>
+// 直接内联，确保最早执行
+(function() {
+    // 最简单粗暴的方法
+    function setBg() {
+        var scheme = document.documentElement.getAttribute('data-scheme') || 'light';
+        var img = scheme === 'dark' ? '/dr.png' : '/ds.png';
+        
+        document.body.style.cssText += 
+            'background-image: url("' + img + '") !important;' +
+            'background-size: cover !important;' +
+            'background-attachment: fixed !important;' +
+            'background-position: center !important;' +
+            'background-repeat: no-repeat !important;' +
+            'min-height: 100vh !important;' +
+            'background-color: transparent !important;';
+    }
+    
+    // 立即执行
+    setBg();
+    
+    // 监听
+    setInterval(setBg, 1000);
+    
+    // 覆盖主题的切换函数（如果有）
+    var originalSwitch = window.switchThemeScheme;
+    if (typeof originalSwitch === 'function') {
+        window.switchThemeScheme = function() {
+            originalSwitch.apply(this, arguments);
+            setTimeout(setBg, 100);
+        };
+    }
+})();
+</script>
+
+    </body>
+</html>

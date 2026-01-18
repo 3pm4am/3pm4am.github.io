@@ -25,14 +25,14 @@
     .tagCloud-tags {
         display: flex;
         flex-wrap: wrap;
-        gap: 7px;
-		margin-bottom: 0ch;
+        gap: 10px;
+		margin-bottom: 2ch;
 
         a {
             background: var(--card-background);
             box-shadow: var(--shadow-l1);
             border-radius: var(--tag-border-radius);
-            padding: 8px 16px;
+            padding: 8px 15px;
             color: var(--card-text-color-main);
             font-size: 1.4rem;
             transition: box-shadow 0.3s ease;

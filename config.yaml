@@ -1,0 +1,17 @@
+baseURL: "http://localhost:1313/"   # 你的站点 URL
+languageCode: "zh-CN"
+title: "降雨机率"
+theme: "hugo-theme-stack"                   # 你的主题名称
+
+# 让 page 可以输出 JSON
+outputs:
+  page:
+    - HTML
+    - JSON
+
+params:
+  startDate: "2026-01-08"
+
+  footer:
+    showStats: false
+    customText: ""

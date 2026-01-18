@@ -47,6 +47,8 @@
   transform: scale(1.02);
 }
 
+
+
 /* 归档年份文字悬停放大 */
 .article-list--compact article .article-date {
   display: inline-block;           /* transform 必须 */
@@ -57,6 +59,7 @@
 .article-list--compact article:hover .article-date {
   transform: scale(1.2);
 }
+
 
 /* 全局滚动条样式 */
 * {
@@ -270,7 +273,6 @@
   transform: scale(1.03); /* 放大 5% */
   z-index: 1; /* 确保放大时不会被覆盖 */
 }
-
   
   //------------------------------------------------------
   //右侧标签放大动画
@@ -666,13 +668,6 @@ a[href*="26年漫画"] {
   color: #fff;
 }
 
-/* 25年剧集 */
-a[href*="25%E5%B9%B4%E5%89%A7%E9%9B%86"],
-a[href*="25年剧集"] {
-  background-color: #F3C947 !important;
-  color: #000;
-}
-
 /* 26年剧集 */
 a[href*="26%E5%B9%B4%E5%89%A7%E9%9B%86"],
 a[href*="26年剧集"] {
@@ -685,4 +680,11 @@ a[href*="26%E5%B9%B4%E7%94%B5%E5%BD%B1"],
 a[href*="26年电影"] {
   background-color: #562621 !important;
   color: #fff;
+}
+
+/* 25年剧集 */
+a[href*="25%E5%B9%B4%E5%89%A7%E9%9B%86"],
+a[href*="25年剧集"] {
+  background-color: #F3C947 !important;
+  color: #000;
 }
